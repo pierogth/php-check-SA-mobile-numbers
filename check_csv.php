@@ -14,7 +14,7 @@ $file  = fopen($tmpName,"r");
                 
 $i=0;
 
-while($i<3){
+while(!feof($file)){
     $csvAsArray = fgetcsv($file);
     $i++;
 foreach($csvAsArray as $line){
