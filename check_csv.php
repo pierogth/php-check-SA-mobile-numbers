@@ -7,16 +7,13 @@ error_reporting(-1);
 var_dump($_FILES);
 $tmpName = $_FILES['csv']['tmp_name'];
 
-
 $outputArray=[];
 
 $file  = fopen($tmpName,"r");
-                
-$i=0;
 
 while(!feof($file)){
     $csvAsArray = fgetcsv($file);
-    $i++;
+  
 foreach($csvAsArray as $line){
 
     $result="";
