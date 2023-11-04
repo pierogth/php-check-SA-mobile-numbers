@@ -7,9 +7,6 @@ class mobileSANumber {
   public $result;
 
   // Methods
-  /*function __construct($number) {
-    $this->number = $number;
-  }*/
   function check_number($number) {
     
     //check if is present +27 prefix, in case not, adding it 
