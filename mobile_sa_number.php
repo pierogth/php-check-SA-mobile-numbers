@@ -33,7 +33,7 @@ class mobileSANumber {
     }
     echo "\n".$result;
     echo "<script>
-    alert('".$result."');
+    alert('".$result.$this->action."');
     location='index.html';
     </script>";
 
