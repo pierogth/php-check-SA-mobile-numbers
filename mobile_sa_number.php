@@ -29,7 +29,8 @@ class mobileSANumber {
     } else {
         
         $result = "Invalid number";
-    
+        $this->action="";
+
     }
     echo "\n".$result;
     echo "<script>
