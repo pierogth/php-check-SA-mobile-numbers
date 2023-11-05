@@ -14,5 +14,3 @@ To run automatic test you have to run first this command:
 That install libraries needed like phpUnit, then you can run:
 <pre>./vendor/bin/phpunit tests</pre>
 in order to run the automatic unit tests and see their results.
-
-./vendor/bin/phpunit tests
