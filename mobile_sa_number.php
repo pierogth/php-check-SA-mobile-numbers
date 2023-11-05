@@ -42,17 +42,19 @@ class mobileSANumber {
   function check_csv($file) {
 
     $outputArray=[];
+    /* skip line of headers */
+    $csvAsArray = fgetcsv($file);
 
     while(!feof($file)){  
       $csvAsArray = fgetcsv($file);
-                            
-        foreach($csvAsArray as $line){
+                  
+        
                           
           $this->result="";
           $this->action="";
                           
           //get the nuber typed by the user
-          $this->number = $line;
+          $this->number = $csvAsArray[1];
           echo $this->number."\n";
           //check if is present +27 prefix, in case not, adding it 
           $lenght = strlen($this->number);
@@ -76,6 +78,7 @@ class mobileSANumber {
                   } else {
                                   
                         $this->result = "Invalid number";
+                        $this->action = "";
                               
                       }
                           
@@ -83,7 +86,7 @@ class mobileSANumber {
                                
                       array_push($outputArray, array($this->number, $this->result, $this->action));
                                 
-                      }
+                      
                       }
                         var_dump($outputArray);
                           
