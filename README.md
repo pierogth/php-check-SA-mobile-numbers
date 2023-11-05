@@ -7,7 +7,7 @@ A simple page HTML connected with a PHP script that perform a validation of a st
 In order to run this app, you have to install php 8.2 or above and composer installed in your PC.
 In the folder where you clone the project, run in a terminal the command:
 <pre>php -S localhost:9999</pre>
-now if you go with a browser on <a href="http://localhost:9999" target="_blank">localhost:9999</a> you can see and use the App.
+now if you go with a browser on <a href="http://localhost:9999" target="_blank" rel="noopener noreferrer">localhost:9999</a> you can see and use the App.
 
 To run automatic test you have to run first this command:
 <pre>composer install</pre>
