@@ -14,9 +14,11 @@ class mobileSANumber {
     echo $lenght;
     if($lenght==9){
         $number = "+27".$number;
+        $this->action=", added +27";
     }elseif($lenght==11){
 
     $number="+".$number;
+    $this->action=", added +";
 
     }
     echo "\n".$number;
@@ -34,6 +36,8 @@ class mobileSANumber {
     alert('".$result."');
     location='index.html';
     </script>";
+
+    return $result.$this->action;
     }
   function check_csv($file) {
 
